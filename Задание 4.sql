@@ -1,0 +1,1 @@
+select * from users where month in ('may','august');
