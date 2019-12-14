@@ -1,0 +1,1 @@
+select ceil(avg((to_days(date(created_at))-to_days(birthday_at))/365.25)) from users;
