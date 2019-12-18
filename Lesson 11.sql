@@ -1,4 +1,11 @@
 -- Создайте таблицу logs типа Archive. 
+use example;
+create table logs (
+Time datetime,
+Tablen text,
+PK int,
+name text
+) Engine=Archive;
 -- Пусть при каждом создании записи в таблицах users, catalogs и products в таблицу 
 -- logs помещается время и дата создания записи, название таблицы, идентификатор первичного ключа и содержимое поля name.
 use example;
